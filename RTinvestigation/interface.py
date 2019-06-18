@@ -6,12 +6,16 @@ import pandas as pd
 import datetime
 import glob
 
+from RTinvestigation import utils as rtu
+
 '''
 
 '''
 
 cmap = 'viridis'
-files = '/DATA/VRTC/OSOAA_profile/RESULTS/PROFILE/fluxes*chl0.03_sed0.00'
+files = '/DATA/VRTC/OSOAA_profile/RESULTS/PROFILE/RTinvestigation*chl0.03_sed0.00'
+files = '/DATA/VRTC/OSOAA_profile/RESULTS/PROFILE/osoaa*chl0.03_sed0.00'
+
 files = glob.glob(files)
 files.sort()
 
